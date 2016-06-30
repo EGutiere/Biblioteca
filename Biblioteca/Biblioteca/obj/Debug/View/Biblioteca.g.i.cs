@@ -152,6 +152,14 @@ namespace Biblioteca.View {
         #line default
         #line hidden
         
+        
+        #line 32 "..\..\..\View\Biblioteca.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label lbl_Nome_Busca_Copy;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -259,6 +267,9 @@ namespace Biblioteca.View {
             return;
             case 14:
             this.menu = ((System.Windows.Controls.Menu)(target));
+            return;
+            case 15:
+            this.lbl_Nome_Busca_Copy = ((System.Windows.Controls.Label)(target));
             return;
             }
             this._contentLoaded = true;

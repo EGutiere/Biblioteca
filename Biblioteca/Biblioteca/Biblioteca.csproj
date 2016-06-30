@@ -95,6 +95,9 @@
     <Compile Include="View\Biblioteca.xaml.cs">
       <DependentUpon>Biblioteca.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -146,6 +149,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="View\Biblioteca.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Window1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

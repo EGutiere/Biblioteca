@@ -25,10 +25,11 @@
         <Button x:Name="btn_Excluir" Content="Excluir" Grid.Column="1" HorizontalAlignment="Left" Margin="229,100,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1" Click="btn_Excluir_Click" Height="20"/>
         <Button x:Name="btn_Alterar" Content="Alterar" Grid.Column="1" HorizontalAlignment="Left" Margin="149,100,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1" Click="btn_Alterar_Click" Height="20"/>
         <Button x:Name="btn_Cancelar" Content="Cancelar" Grid.Column="1" HorizontalAlignment="Left" Margin="309,100,0,0" VerticalAlignment="Top" Width="75" Grid.Row="1" Click="btn_Cancelar_Click" Height="20"/>
-        <Label x:Name="lbl_Nome_Busca" Content="Nome" HorizontalAlignment="Left" Margin="29,62,0,0" VerticalAlignment="Top" Height="26" Width="43"/>
+        <Label x:Name="lbl_Nome_Busca" Content="Nome" HorizontalAlignment="Left" Margin="28,64,0,0" VerticalAlignment="Top" Height="26" Width="43"/>
         <TextBox x:Name="txt_Nome_Busca" HorizontalAlignment="Left" Height="23" Margin="0,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="348" Grid.Column="1"/>
         <Button x:Name="btn_Buscar" Content="Buscar" Grid.Column="1" HorizontalAlignment="Left" Margin="353,65,0,0" VerticalAlignment="Top" Width="38" Height="23" Click="btn_Buscar_Click"/>
         <Menu x:Name="menu" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="482"/>
+        <Label x:Name="lbl_Nome_Busca_Copy" Content="Nome" HorizontalAlignment="Left" Margin="81,114,0,0" VerticalAlignment="Top" Height="26" Width="43" Grid.Column="1"/>
 
     </Grid>
 </Window>

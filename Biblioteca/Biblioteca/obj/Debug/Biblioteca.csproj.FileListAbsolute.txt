@@ -17,6 +17,3 @@ E:\C#\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb
 E:\C#\Biblioteca\Biblioteca\obj\Debug\View\Biblioteca.g.cs
 E:\C#\Biblioteca\Biblioteca\obj\Debug\Biblioteca_MarkupCompile.lref
 E:\C#\Biblioteca\Biblioteca\obj\Debug\View\Biblioteca.baml
-C:\Users\Gutiere\Source\Repos\Biblioteca\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe.config
-C:\Users\Gutiere\Source\Repos\Biblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.exe
-C:\Users\Gutiere\Source\Repos\Biblioteca\Biblioteca\Biblioteca\obj\Debug\Biblioteca.pdb

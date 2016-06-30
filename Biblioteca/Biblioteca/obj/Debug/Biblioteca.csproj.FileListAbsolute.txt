@@ -1,0 +1,2 @@
+C:\Users\1517143.UP\Downloads\Biblioteca-master\Biblioteca\bin\Debug\Biblioteca.exe.config
+E:\C#\Biblioteca\Biblioteca\bin\Debug\Biblioteca.exe.config

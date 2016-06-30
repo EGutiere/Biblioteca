@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Biblioteca.Model;
+using Biblioteca.DAL;
 
 namespace Biblioteca.View
 {
@@ -19,6 +21,8 @@ namespace Biblioteca.View
     /// </summary>
     public partial class Biblioteca : Window
     {
+        private Pessoa p = new Pessoa();
+
         public Biblioteca()
         {
             InitializeComponent();
@@ -27,7 +31,23 @@ namespace Biblioteca.View
 
         private void btn_Incluir_Click(object sender, RoutedEventArgs e)
         {
+            p = new Pessoa();
+            p.Nome = txt_Nome.Text;
+            p.Cpf = txt_CPF.Text;
 
+            if (PessoaDAO.AlterarPessoa(p))
+            {
+                MessageBox.Show("Gravado com sucesso!", "Cadastro de Pessoa",
+                MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            else
+            {
+                MessageBox.Show("Não foi possível gravar!", "Cadastro de Pessoa",
+                MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
+            txt_Nome.Text = "";
+            txt_Nome.Focus();
         }
 
         private void btn_Alterar_Click(object sender, RoutedEventArgs e)
@@ -50,7 +70,7 @@ namespace Biblioteca.View
 
         }
 
-        private void txt_Cep_TextChanged(object sender, TextChangedEventArgs e)
+        private void txt_CPF_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }

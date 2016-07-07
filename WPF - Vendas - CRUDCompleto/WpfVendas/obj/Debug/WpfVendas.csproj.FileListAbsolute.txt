@@ -36,3 +36,6 @@ C:\Documentos\ProfessorDiogo\WpfVendas\WpfVendas\obj\Debug\WpfVendas_MarkupCompi
 C:\Documentos\ProfessorDiogo\WpfVendas\WpfVendas\obj\Debug\WpfVendas.g.resources
 C:\Documentos\ProfessorDiogo\WpfVendas\WpfVendas\obj\Debug\WpfVendas.Properties.Resources.resources
 C:\Documentos\ProfessorDiogo\WpfVendas\WpfVendas\obj\Debug\WpfVendas.csproj.GenerateResource.Cache
+E:\Projetos_C#\WPF - Vendas - CRUDCompleto\WpfVendas\bin\Debug\WpfVendas.exe.config
+E:\Projetos_C#\WPF - Vendas - CRUDCompleto\WpfVendas\obj\Debug\WpfVendas.exe
+E:\Projetos_C#\WPF - Vendas - CRUDCompleto\WpfVendas\obj\Debug\WpfVendas.pdb

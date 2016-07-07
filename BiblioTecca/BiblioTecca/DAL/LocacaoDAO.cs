@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using BiblioTecca.Model;
+using System.Collections.Generic;
 
 namespace BiblioTecca.DAL
 {
@@ -36,11 +37,11 @@ namespace BiblioTecca.DAL
             }
         }
 
-        public static Locacao VerificarLocacaoPorId (Locacao l)
+        public static Locacao BuscarLocacaoPorId(Locacao l)
         {
-            return ctx.Locacoes.FirstOrDefault(x => x.IdLocacao.Equals(l.IdLocacao));
-
+            return ctx.Locacoes.;
         }
-
+       
+ 
     }
 }

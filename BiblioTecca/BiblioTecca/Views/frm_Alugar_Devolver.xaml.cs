@@ -120,22 +120,24 @@ namespace BiblioTecca.Views
 
         private void txt_IdLocacao_Buscar_TextChanged(object sender, TextChangedEventArgs e)
         {
-            locacao = new Locacao();
-
-            locacao.IdLocacao = Convert.ToInt32(txt_IdLocacao_Buscar.Text);
-
-            locacao = LocacaoDAO.VerificarLocacaoPorId(locacao);
-
-            try
+            if (!String.IsNullOrEmpty(txt_IdLocacao_Buscar.Text))
             {
-                txt_IdLivro_Buscar.Text = Convert.ToString(locacao.LocacaoLivro.IdLivro);
+                locacao = new Locacao();
+                locacao.IdLocacao = Convert.ToInt32(txt_IdLocacao_Buscar.Text);
+                locacao = LocacaoDAO.BuscarLocacaoPorId(locacao);
 
-                txt_CpfPessoa_Locacao.Text = locacao.LocacaoPessoa.PessoaCpf;
-            }
-            catch (Exception)
-            {
+                try
+                {
+                 
+                    txt_IdLivro_Buscar.Text = Convert.ToString(locacao.LocacaoLivro.IdLivro);
 
-                throw;
+                    txt_CpfPessoa_Locacao.Text = locacao.LocacaoPessoa.PessoaCpf;
+                }
+                catch (Exception)
+                {
+                    txt_IdLivro_Buscar.Text = "";
+                    txt_CpfPessoa_Locacao.Text = "";
+                }
             }
         }
 

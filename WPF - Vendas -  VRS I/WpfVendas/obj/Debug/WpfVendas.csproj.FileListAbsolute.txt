@@ -17,3 +17,6 @@ C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\bin\De
 C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\bin\Debug\EntityFramework.xml
 C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projetos_C#\WPF - Vendas -  VRS I\WpfVendas\bin\Debug\WpfVendas.exe.config
+E:\Projetos_C#\WPF - Vendas -  VRS I\WpfVendas\obj\Debug\WpfVendas.exe
+E:\Projetos_C#\WPF - Vendas -  VRS I\WpfVendas\obj\Debug\WpfVendas.pdb

@@ -151,4 +151,3 @@ E:\Projetos_C#\BiblioTecca\BiblioTecca\obj\Debug\BiblioTecca.Migrations.Bibliote
 E:\Projetos_C#\BiblioTecca\BiblioTecca\obj\Debug\BiblioTecca.Migrations.bb8.resources
 E:\Projetos_C#\BiblioTecca\BiblioTecca\obj\Debug\BiblioTecca.Properties.Resources.resources
 E:\Projetos_C#\BiblioTecca\BiblioTecca\obj\Debug\BiblioTecca.csproj.GenerateResource.Cache
-E:\Projetos_C#\BiblioTecca\BiblioTecca\obj\Debug\BiblioTecca.csprojResolveAssemblyReference.cache

@@ -1,16 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using BiblioTecca.DAL;
 using BiblioTecca.Model;
 
@@ -28,10 +18,10 @@ namespace BiblioTecca.Views
         public frm_Alugar_Devolver()
         {
             InitializeComponent();
-
+            txt_Data_Limite_Devolucao.Text = Convert.ToString(DateTime.Today.AddDays(10));
         }
 
-        private void txt_IdLocacao_Buscar_TextChanged(object sender, TextChangedEventArgs e)
+        private void txt_IdLivro_Buscar_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (!String.IsNullOrEmpty(txt_IdLivro_Buscar.Text))
             {                
@@ -83,8 +73,78 @@ namespace BiblioTecca.Views
             }
         }
 
+        private void btn_fmr_Livros_Alugar_Devolver_Locar_Click(object sender, RoutedEventArgs e)
+        {
+            locacao = new Locacao();
+
+            l = new Livro();
+            l.IdLivro = Convert.ToInt32(txt_IdLivro_Buscar.Text);
+            l = LivroDAO.VerificarLivroPorCod(l);
+
+            p = new Pessoa();
+            p.PessoaCpf = txt_CpfPessoa_Locacao.Text;
+            p = PessoaDAO.VerificarPessoaPorCPF(p);
+
+            try
+            {
+                locacao.LocacaoLivro = l;
+                locacao.LocacaoPessoa = p;
+                locacao.LocacaoDataAluguel = DateTime.Today;
+                locacao.LocacaoDataLimite = Convert.ToDateTime(txt_Data_Limite_Devolucao.Text);
+                locacao.LocacaoStatus = true;
+
+                if (l.LivroStatus)
+                {
+                    l.LivroStatus = false;
+                    LivroDAO.AlterarLivro(l);
+                    LocacaoDAO.AdicionarLocacao(locacao);
+                    MessageBox.Show("Locação realizada com sucesso " + "Código de locação: "+ locacao.IdLocacao.ToString(), "Locação",
+                    MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+                else
+                {
+                    MessageBox.Show("Livro Indisponível", "Locação",
+                    MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+
+                
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Favor preencher os campos", "Locação",
+                MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
+        }      
+
+        private void txt_IdLocacao_Buscar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            locacao = new Locacao();
+
+            locacao.IdLocacao = Convert.ToInt32(txt_IdLocacao_Buscar.Text);
+
+            locacao = LocacaoDAO.VerificarLocacaoPorId(locacao);
+
+            try
+            {
+                txt_IdLivro_Buscar.Text = Convert.ToString(locacao.LocacaoLivro.IdLivro);
+
+                txt_CpfPessoa_Locacao.Text = locacao.LocacaoPessoa.PessoaCpf;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
 
 
+        private void btn_fmr_Livros_Alugar_Devolver_Devolver_Click(object sender, RoutedEventArgs e)
+        {
+            locacao = new Locacao();
+
+        }
 
         //private void btn_frmEmprestimo_Buscar_Click(object sender, RoutedEventArgs e)
         //{
@@ -118,8 +178,7 @@ namespace BiblioTecca.Views
         //        locacao = new Locacao();
         //        livro = new Livro();
         //        pessoa = new Pessoa();
-        //        locacao.LocacaoDataAluguel = DateTime.Today;
-        //        locacao.LocacaoDataLimite = DateTime.Today.AddDays(10);
+        //        
 
 
         //        livro.IdLivro = Convert.ToInt16(txt_CodLivro_Locacao.Text);

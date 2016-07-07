@@ -7,30 +7,32 @@
         mc:Ignorable="d"
         Title="Livros - Alugar / Devolver" Height="300" Width="585" Icon="/BiblioTecca;component/Icons/Folders-Application.ico" Background="#FFE2E2E2">
     <Grid Margin="0,0,2,0">
-        <TextBox x:Name="txt_IdLivro_Buscar" HorizontalAlignment="Left" Height="23" Margin="91,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="417" TextChanged="txt_IdLocacao_Buscar_TextChanged" />
+        <TextBox x:Name="txt_IdLivro_Buscar" HorizontalAlignment="Left" Height="23" Margin="96,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193" TextChanged="txt_IdLivro_Buscar_TextChanged" />
         <TextBox x:Name="txt_NomeLivro_Locacao" HorizontalAlignment="Left" Height="23" Margin="96,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193" IsEnabled="False" />
-        <Label x:Name="lbl_Livro_Locacao" Content="Livro" HorizontalAlignment="Left" Margin="23,91,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txt_NomePessoa_Locacao" HorizontalAlignment="Left" Height="23" Margin="365,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" IsEnabled="False"/>
-        <Label x:Name="lbl_Pessoa_Locacao" Content="Pessoa" HorizontalAlignment="Left" Margin="314,119,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.147,0.468"/>
-        <Label x:Name="lbl_Status_Locacao" Content="Status" HorizontalAlignment="Left" Margin="26,171,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lbl_CodLivro_Locacao" Content="Cod Livro" HorizontalAlignment="Left" Margin="26,35,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txt_CpfPessoa_Locacao" HorizontalAlignment="Left" Height="23" Margin="365,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" TextChanged="txt_CpfPessoa_Locacao_TextChanged"/>
-        <Label x:Name="lbl_Cpf_Pessoa_Locacao" Content="CPF" HorizontalAlignment="Left" Margin="314,91,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="txt_Situacao" HorizontalAlignment="Left" Margin="96,175,0,0" VerticalAlignment="Top" Width="120">
+        <Label x:Name="lbl_Livro_Locacao" Content="Livro" HorizontalAlignment="Left" Margin="17,91,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_NomePessoa_Locacao" HorizontalAlignment="Left" Height="23" Margin="365,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" IsEnabled="False"/>
+        <Label x:Name="lbl_Pessoa_Locacao" Content="Pessoa" HorizontalAlignment="Left" Margin="314,88,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.147,0.468"/>
+        <Label x:Name="lbl_Status_Locacao" Content="Status" HorizontalAlignment="Left" Margin="17,171,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_CodLivro_Locacao" Content="Cod Livro" HorizontalAlignment="Left" Margin="13,65,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_CpfPessoa_Locacao" HorizontalAlignment="Left" Height="23" Margin="365,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" TextChanged="txt_CpfPessoa_Locacao_TextChanged"/>
+        <Label x:Name="lbl_Cpf_Pessoa_Locacao" Content="CPF" HorizontalAlignment="Left" Margin="314,63,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.581,-0.671"/>
+        <ComboBox x:Name="txt_Situacao" HorizontalAlignment="Left" Margin="96,175,0,0" VerticalAlignment="Top" Width="120" IsEnabled="False">
             <ComboBoxItem Content="Disponível" HorizontalAlignment="Left" Width="118"/>
             <ComboBoxItem Content="Indisponível" HorizontalAlignment="Left" Width="118"/>
         </ComboBox>
-        <Button x:Name="btn_fmr_Livros_Alugar_Devolver_Locar" Content="Locação" HorizontalAlignment="Left" Margin="330,238,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btn_fmr_Livros_Alugar_Devolver_Locar" Content="Alugar" HorizontalAlignment="Left" Margin="330,238,0,0" VerticalAlignment="Top" Width="75" Click="btn_fmr_Livros_Alugar_Devolver_Locar_Click"/>
         <Button x:Name="btn_fmr_Livros_Alugar_Devolver_Cancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="490,238,0,0" VerticalAlignment="Top" Width="75" />
         <DatePicker x:Name="txt_Data_Limite_Devolucao" HorizontalAlignment="Left" Margin="365,179,0,0" VerticalAlignment="Top" Width="200" IsEnabled="False"/>
-        <Label x:Name="lbl_Data_Limite_Devolucao" Content="Data Limite Devolução" HorizontalAlignment="Left" Margin="236,180,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_Data_Limite_Devolucao" Content="Data Limite Devolução" HorizontalAlignment="Left" Margin="231,180,0,0" VerticalAlignment="Top"/>
         <DatePicker x:Name="txt_Data_Devolucao" HorizontalAlignment="Left" Margin="365,208,0,0" VerticalAlignment="Top" Width="200"/>
         <Label x:Name="lbl_Data_Devolucao" Content="Data Devolução" HorizontalAlignment="Left" Margin="266,206,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btn_fmr_Livros_Alugar_Devolver_Devolver" Content="Devolução" HorizontalAlignment="Left" Margin="410,238,0,0" VerticalAlignment="Top" Width="75" />
+        <Button x:Name="btn_fmr_Livros_Alugar_Devolver_Devolver" Content="Devolver" HorizontalAlignment="Left" Margin="410,238,0,0" VerticalAlignment="Top" Width="75" Click="btn_fmr_Livros_Alugar_Devolver_Devolver_Click" />
         <TextBox x:Name="txt_ColetaneaLivro_Locacao" HorizontalAlignment="Left" Height="23" Margin="96,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193" IsEnabled="False" />
         <TextBox x:Name="txt_LivroClassificacao_Locacao" HorizontalAlignment="Left" Height="23" Margin="96,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193" IsEnabled="False" />
-        <Label x:Name="lbl_ColetaneaLivro_Locacao" Content="Coletânea" HorizontalAlignment="Left" Margin="23,117,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.586,1.801"/>
-        <Label x:Name="lbl_LivroClassificacao" Content="Classificação" HorizontalAlignment="Left" Margin="23,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.586,1.801"/>
+        <Label x:Name="lbl_ColetaneaLivro_Locacao" Content="Coletânea" HorizontalAlignment="Left" Margin="14,117,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.586,1.801"/>
+        <Label x:Name="lbl_LivroClassificacao" Content="Classificação" HorizontalAlignment="Left" Margin="14,147,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.586,1.801"/>
+        <TextBox x:Name="txt_IdLocacao_Buscar" HorizontalAlignment="Left" Height="23" Margin="96,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193" TextChanged="txt_IdLocacao_Buscar_TextChanged" />
+        <Label x:Name="lbl_CodLocacao" Content="Cod Locação" HorizontalAlignment="Left" Margin="14,24,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

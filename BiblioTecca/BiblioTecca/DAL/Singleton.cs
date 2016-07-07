@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BiblioTecca;
-
-namespace BiblioTecca.DAL
+﻿namespace BiblioTecca.DAL
 {
     class Singleton
     {

@@ -1,0 +1,18 @@
+﻿<Window x:Class="BiblioTecca.Views.frm_ManterPessoa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cadastro - Pessoa" Height="300" Width="585" Icon="/BiblioTecca;component/Icons/users.ico" Background="#FFE2E2E2">
+    <Grid>
+        <Label x:Name="lbl_Busca" Content="CPF" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,55,0,0"/>
+        <Label x:Name="lbl_Nome" Content="Nome" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,122,0,0"/>
+        <Label x:Name="lbl_Cpf" Content="CPF" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="38,153,0,0"/>
+        <TextBox x:Name="txt_Cpf_Busca" HorizontalAlignment="Left" Height="23" Margin="86,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="401"/>
+        <TextBox x:Name="txt_Nome" HorizontalAlignment="Left" Height="23" Margin="86,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450"/>
+        <TextBox x:Name="txt_Cpf" HorizontalAlignment="Left" Height="23" Margin="86,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450"/>
+        <Button x:Name="btn_frmPessoa_Buscar_Cpf" Content="Buscar" HorizontalAlignment="Left" Margin="492,55,0,0" VerticalAlignment="Top" Width="75" Click="btn_Buscar_Cpf_Click"/>
+        <Button x:Name="btn_frmPessoa_Inserir" Content="Inserir" HorizontalAlignment="Left" Margin="252,238,0,0" VerticalAlignment="Top" Width="75" Click="btn_frmPessoa_Inserir_Click"/>
+        <Button x:Name="btn_frmPessoa_Excluir" Content="Excluir" HorizontalAlignment="Left" Margin="412,238,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-1.361,0.413" Click="btn_frmPessoa_Excluir_Click"/>
+        <Button x:Name="btn_frmPessoa_Alterar" Content="Alterar" HorizontalAlignment="Left" Margin="332,238,0,0" VerticalAlignment="Top" Width="75" Click="btn_frmPessoa_Alterar_Click"/>
+        <Button x:Name="btn_frmPessoa_Cancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="492,238,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-1.361,0.413" Click="btn_frmPessoa_Cancelar_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="BiblioTecca.Views.frm_ManterLivro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cadastro - Livro" Height="300" Width="585" Icon="/BiblioTecca;component/Icons/Livros.ico" Background="#FFE2E2E2">
+    <Grid Margin="0,0,2,0">
+        <TextBox x:Name="txt_Titulo_buscar" HorizontalAlignment="Left" Height="23" Margin="91,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="392"/>
+        <Label x:Name="lbl_Titulo_Buscar" Content="Título" HorizontalAlignment="Left" Margin="20,37,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_frmLivro_Buscar" Content="Buscar" HorizontalAlignment="Left" Margin="497,40,0,0" VerticalAlignment="Top" Width="68" Height="23" Click="btn_frmLivro_Buscar_Click"/>
+        <TextBox x:Name="txt_Titulo" HorizontalAlignment="Left" Height="23" Margin="91,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="392"/>
+        <Label x:Name="lbl_Titulo" Content="Título" HorizontalAlignment="Left" Margin="20,134,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_Coletanea" HorizontalAlignment="Left" Height="23" Margin="91,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="392"/>
+        <Label x:Name="lbl_Coletanea" Content="Coletânea" HorizontalAlignment="Left" Margin="20,162,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_Classificacao" Content="Clasificação" HorizontalAlignment="Left" Margin="20,188,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_Classificacao" HorizontalAlignment="Left" Height="23" Margin="91,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="392"/>
+        <Button x:Name="btn_frmLivro_Inserir" Content="Inserir" HorizontalAlignment="Left" Margin="250,238,0,0" VerticalAlignment="Top" Width="75" Click="btn_frmLivro_Inserir_Click"/>
+        <Button x:Name="btn_frmLivro_Alterar" Content="Alterar" HorizontalAlignment="Left" Margin="330,238,0,0" VerticalAlignment="Top" Width="75" Click="btn_frmLivro_Alterar_Click"/>
+        <Button x:Name="btn_frmLivro_Excluir" Content="Excluir" HorizontalAlignment="Left" Margin="410,238,0,0" VerticalAlignment="Top" Width="75" Click="btn_frmLivro_Excluir_Click"/>
+        <Button x:Name="btn_frmLivro_Cancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="490,238,0,0" VerticalAlignment="Top" Width="75" Click="btn_frmLivro_Cancelar_Click"/>
+        <Label x:Name="lbl_IdLivro" Content="Id do Livro" HorizontalAlignment="Left" Margin="20,108,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_IdLivro" HorizontalAlignment="Left" Height="23" Margin="91,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="392" IsEnabled="False"/>
+
+    </Grid>
+</Window>

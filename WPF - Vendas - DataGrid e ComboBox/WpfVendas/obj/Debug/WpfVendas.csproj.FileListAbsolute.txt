@@ -1,0 +1,57 @@
+C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\bin\Debug\WpfVendas.exe.config
+C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\bin\Debug\WpfVendas.exe
+C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\bin\Debug\WpfVendas.pdb
+C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\obj\Debug\WpfVendas.csprojResolveAssemblyReference.cache
+C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\obj\Debug\App.g.cs
+C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\obj\Debug\WpfVendas_MarkupCompile.cache
+C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\obj\Debug\WpfVendas.g.resources
+C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\obj\Debug\WpfVendas.Properties.Resources.resources
+C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\obj\Debug\WpfVendas.csproj.GenerateResource.Cache
+C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\obj\Debug\WpfVendas.exe
+C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\obj\Debug\WpfVendas.pdb
+C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\obj\Debug\Views\MainWindow.baml
+C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\obj\Debug\Views\MainWindow.g.cs
+C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\obj\Debug\Views\frmCadastroCliente.baml
+C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\obj\Debug\Views\frmCadastroCliente.g.cs
+C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\bin\Debug\EntityFramework.dll
+C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\bin\Debug\EntityFramework.xml
+C:\Users\101000\Documents\Visual Studio 2013\Projects\WpfVendas\WpfVendas\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Avell G1511 FIRE\Downloads\WpfVendas\WpfVendas\bin\Debug\WpfVendas.exe.config
+C:\Users\Avell G1511 FIRE\Downloads\WpfVendas\WpfVendas\obj\Debug\WpfVendas.exe
+C:\Users\Avell G1511 FIRE\Downloads\WpfVendas\WpfVendas\obj\Debug\WpfVendas.pdb
+C:\Users\Avell G1511 FIRE\Downloads\WpfVendas\WpfVendas\bin\Debug\WpfVendas.exe
+C:\Users\Avell G1511 FIRE\Downloads\WpfVendas\WpfVendas\bin\Debug\WpfVendas.pdb
+C:\Users\Avell G1511 FIRE\Downloads\WpfVendas\WpfVendas\bin\Debug\EntityFramework.dll
+C:\Users\Avell G1511 FIRE\Downloads\WpfVendas\WpfVendas\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Avell G1511 FIRE\Downloads\WpfVendas\WpfVendas\bin\Debug\EntityFramework.xml
+C:\Users\Avell G1511 FIRE\Downloads\WpfVendas\WpfVendas\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Avell G1511 FIRE\Downloads\WpfVendas\WpfVendas\obj\Debug\WpfVendas.csprojResolveAssemblyReference.cache
+C:\Users\Avell G1511 FIRE\Downloads\WpfVendas\WpfVendas\obj\Debug\Views\frmCadastroCliente.baml
+C:\Users\Avell G1511 FIRE\Downloads\WpfVendas\WpfVendas\obj\Debug\Views\MainWindow.baml
+C:\Users\Avell G1511 FIRE\Downloads\WpfVendas\WpfVendas\obj\Debug\Views\frmCadastroCliente.g.cs
+C:\Users\Avell G1511 FIRE\Downloads\WpfVendas\WpfVendas\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Avell G1511 FIRE\Downloads\WpfVendas\WpfVendas\obj\Debug\App.g.cs
+C:\Users\Avell G1511 FIRE\Downloads\WpfVendas\WpfVendas\obj\Debug\WpfVendas_MarkupCompile.cache
+C:\Users\Avell G1511 FIRE\Downloads\WpfVendas\WpfVendas\obj\Debug\WpfVendas.g.resources
+C:\Users\Avell G1511 FIRE\Downloads\WpfVendas\WpfVendas\obj\Debug\WpfVendas.Properties.Resources.resources
+C:\Users\Avell G1511 FIRE\Downloads\WpfVendas\WpfVendas\obj\Debug\WpfVendas.csproj.GenerateResource.Cache
+E:\Projetos_C#\WPF - Vendas - DataGrid e ComboBox\WpfVendas\bin\Debug\WpfVendas.exe.config
+E:\Projetos_C#\WPF - Vendas - DataGrid e ComboBox\WpfVendas\obj\Debug\WpfVendas.exe
+E:\Projetos_C#\WPF - Vendas - DataGrid e ComboBox\WpfVendas\obj\Debug\WpfVendas.pdb
+E:\Projetos_C#\WPF - Vendas - DataGrid e ComboBox\WpfVendas\bin\Debug\WpfVendas.exe
+E:\Projetos_C#\WPF - Vendas - DataGrid e ComboBox\WpfVendas\bin\Debug\WpfVendas.pdb
+E:\Projetos_C#\WPF - Vendas - DataGrid e ComboBox\WpfVendas\bin\Debug\EntityFramework.dll
+E:\Projetos_C#\WPF - Vendas - DataGrid e ComboBox\WpfVendas\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projetos_C#\WPF - Vendas - DataGrid e ComboBox\WpfVendas\bin\Debug\EntityFramework.xml
+E:\Projetos_C#\WPF - Vendas - DataGrid e ComboBox\WpfVendas\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projetos_C#\WPF - Vendas - DataGrid e ComboBox\WpfVendas\obj\Debug\WpfVendas.csprojResolveAssemblyReference.cache
+E:\Projetos_C#\WPF - Vendas - DataGrid e ComboBox\WpfVendas\obj\Debug\Views\frmCadastroCliente.baml
+E:\Projetos_C#\WPF - Vendas - DataGrid e ComboBox\WpfVendas\obj\Debug\Views\MainWindow.baml
+E:\Projetos_C#\WPF - Vendas - DataGrid e ComboBox\WpfVendas\obj\Debug\Views\frmCadastroCliente.g.cs
+E:\Projetos_C#\WPF - Vendas - DataGrid e ComboBox\WpfVendas\obj\Debug\Views\MainWindow.g.cs
+E:\Projetos_C#\WPF - Vendas - DataGrid e ComboBox\WpfVendas\obj\Debug\App.g.cs
+E:\Projetos_C#\WPF - Vendas - DataGrid e ComboBox\WpfVendas\obj\Debug\WpfVendas_MarkupCompile.cache
+E:\Projetos_C#\WPF - Vendas - DataGrid e ComboBox\WpfVendas\obj\Debug\WpfVendas.g.resources
+E:\Projetos_C#\WPF - Vendas - DataGrid e ComboBox\WpfVendas\obj\Debug\WpfVendas.Properties.Resources.resources
+E:\Projetos_C#\WPF - Vendas - DataGrid e ComboBox\WpfVendas\obj\Debug\WpfVendas.csproj.GenerateResource.Cache

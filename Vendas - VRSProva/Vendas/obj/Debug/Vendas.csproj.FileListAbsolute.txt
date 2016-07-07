@@ -1,0 +1,6 @@
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\bin\Debug\Vendas.exe.config
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\bin\Debug\Vendas.exe
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\bin\Debug\Vendas.pdb
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\obj\Debug\Vendas.csprojResolveAssemblyReference.cache
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\obj\Debug\Vendas.exe
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\obj\Debug\Vendas.pdb

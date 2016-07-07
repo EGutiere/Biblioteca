@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfVendas.Views.frmCadastroCliente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cadastro de Cliente" Height="171.429" Width="309.023" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Nome:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="CPF:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <Label Content="Telefone:" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="73,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="209" TabIndex="3"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="73,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="209" TabIndex="0"/>
+        <TextBox x:Name="txtCpf" HorizontalAlignment="Left" Height="23" Margin="73,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="209" TabIndex="1"/>
+        <Button x:Name="btnGravar" Content="Gravar" HorizontalAlignment="Left" Margin="207,103,0,0" VerticalAlignment="Top" Width="75" TabIndex="4" Click="btnGravar_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfVendas.Views.frmCadastroCliente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cadastro de Cliente" Height="248" Width="319.689" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Nome:" HorizontalAlignment="Left" Margin="10,87,0,0" VerticalAlignment="Top"/>
+        <Label Content="CPF:" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top"/>
+        <Label Content="Telefone:" HorizontalAlignment="Left" Margin="10,149,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="73,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TabIndex="3"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="73,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TabIndex="0"/>
+        <TextBox x:Name="txtCpf" HorizontalAlignment="Left" Height="23" Margin="73,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TabIndex="1"/>
+        <Button x:Name="btnGravar" Content="Gravar" HorizontalAlignment="Left" Margin="230,180,0,0" VerticalAlignment="Top" Width="60" TabIndex="4" Click="btnGravar_Click"/>
+        <Label Content="CPF:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBuscarCliente" HorizontalAlignment="Left" Height="23" Margin="73,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TabIndex="0"/>
+        <Button x:Name="btnBuscarCliente" Content="Buscar" HorizontalAlignment="Left" Margin="216,38,0,0" VerticalAlignment="Top" Width="75" TabIndex="4" Click="btnBuscarCliente_Click"/>
+        <Separator HorizontalAlignment="Left" Height="4" Margin="10,65,0,0" VerticalAlignment="Top" Width="281"/>
+        <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="Left" Margin="155,180,0,0" VerticalAlignment="Top" Width="60" TabIndex="4" IsEnabled="False" Click="btnAlterar_Click"/>
+        <Button x:Name="btnRemover" Content="Remover" HorizontalAlignment="Left" Margin="85,180,0,0" VerticalAlignment="Top" Width="60" TabIndex="4" IsEnabled="False" Click="btnRemover_Click"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="10,180,0,0" VerticalAlignment="Top" Width="60" TabIndex="4" IsEnabled="False" Click="btnCancelar_Click"/>
+
+    </Grid>
+</Window>

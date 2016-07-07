@@ -1,0 +1,58 @@
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\bin\Debug\Vendas.exe.config
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\bin\Debug\Vendas.exe
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\bin\Debug\Vendas.pdb
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\obj\Debug\Vendas.csprojResolveAssemblyReference.cache
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\obj\Debug\Vendas.exe
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\obj\Debug\Vendas.pdb
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\Vendas\bin\Debug\Vendas.exe.config
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\Vendas\obj\Debug\Vendas.exe
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\Vendas\obj\Debug\Vendas.pdb
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\Vendas\bin\Debug\Vendas.exe
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\Vendas\bin\Debug\Vendas.pdb
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\Vendas\obj\Debug\Vendas.csprojResolveAssemblyReference.cache
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\Vendas\bin\Debug\EntityFramework.dll
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\Vendas\bin\Debug\EntityFramework.SqlServer.dll
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\Vendas\bin\Debug\EntityFramework.xml
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\Vendas\bin\Debug\EntityFramework.SqlServer.xml
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\Vendas\obj\Debug\Vendas.Migrations.Inicial.resources
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\Vendas\obj\Debug\Vendas.csproj.GenerateResource.Cache
+C:\Documentos\ProfessorDiogo\Vendas\Vendas\Vendas\obj\Debug\Vendas.Migrations.AddTelefoneCliente.resources
+C:\Users\Hauer\Downloads\Vendas(8)\Vendas\bin\Debug\Vendas.exe.config
+C:\Users\Hauer\Downloads\Vendas(8)\Vendas\obj\Debug\Vendas.exe
+C:\Users\Hauer\Downloads\Vendas(8)\Vendas\obj\Debug\Vendas.pdb
+C:\Users\Hauer\Downloads\Vendas(8)\Vendas\bin\Debug\Vendas.exe
+C:\Users\Hauer\Downloads\Vendas(8)\Vendas\bin\Debug\Vendas.pdb
+C:\Users\Hauer\Downloads\Vendas(8)\Vendas\bin\Debug\EntityFramework.dll
+C:\Users\Hauer\Downloads\Vendas(8)\Vendas\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hauer\Downloads\Vendas(8)\Vendas\bin\Debug\EntityFramework.xml
+C:\Users\Hauer\Downloads\Vendas(8)\Vendas\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hauer\Downloads\Vendas(8)\Vendas\obj\Debug\Vendas.csprojResolveAssemblyReference.cache
+C:\Users\Hauer\Downloads\Vendas(8)\Vendas\obj\Debug\Vendas.Migrations.Inicial.resources
+C:\Users\Hauer\Downloads\Vendas(8)\Vendas\obj\Debug\Vendas.csproj.GenerateResource.Cache
+C:\Users\Avell G1511 FIRE\Desktop\Vendas(8)\Vendas\bin\Debug\Vendas.exe.config
+C:\Users\Avell G1511 FIRE\Desktop\Vendas(8)\Vendas\obj\Debug\Vendas.exe
+C:\Users\Avell G1511 FIRE\Desktop\Vendas(8)\Vendas\obj\Debug\Vendas.pdb
+C:\Users\Avell G1511 FIRE\Desktop\Vendas(8)\Vendas\bin\Debug\Vendas.exe
+C:\Users\Avell G1511 FIRE\Desktop\Vendas(8)\Vendas\bin\Debug\Vendas.pdb
+C:\Users\Avell G1511 FIRE\Desktop\Vendas(8)\Vendas\bin\Debug\EntityFramework.dll
+C:\Users\Avell G1511 FIRE\Desktop\Vendas(8)\Vendas\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Avell G1511 FIRE\Desktop\Vendas(8)\Vendas\bin\Debug\EntityFramework.xml
+C:\Users\Avell G1511 FIRE\Desktop\Vendas(8)\Vendas\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Avell G1511 FIRE\Desktop\Vendas(8)\Vendas\obj\Debug\Vendas.csprojResolveAssemblyReference.cache
+C:\Users\Avell G1511 FIRE\Desktop\Vendas(8)\Vendas\obj\Debug\Vendas.Migrations.Inicial.resources
+C:\Users\Avell G1511 FIRE\Desktop\Vendas(8)\Vendas\obj\Debug\Vendas.csproj.GenerateResource.Cache
+C:\Users\Avell G1511 FIRE\Desktop\Vendas\Vendas\bin\Debug\Vendas.exe.config
+C:\Users\Avell G1511 FIRE\Desktop\Vendas\Vendas\obj\Debug\Vendas.exe
+C:\Users\Avell G1511 FIRE\Desktop\Vendas\Vendas\obj\Debug\Vendas.pdb
+C:\Documentos\Vendas\Vendas\bin\Debug\Vendas.exe.config
+C:\Documentos\Vendas\Vendas\obj\Debug\Vendas.exe
+C:\Documentos\Vendas\Vendas\obj\Debug\Vendas.pdb
+C:\Documentos\Vendas\Vendas\bin\Debug\Vendas.exe
+C:\Documentos\Vendas\Vendas\bin\Debug\Vendas.pdb
+C:\Documentos\Vendas\Vendas\bin\Debug\EntityFramework.dll
+C:\Documentos\Vendas\Vendas\bin\Debug\EntityFramework.SqlServer.dll
+C:\Documentos\Vendas\Vendas\bin\Debug\EntityFramework.xml
+C:\Documentos\Vendas\Vendas\bin\Debug\EntityFramework.SqlServer.xml
+C:\Documentos\Vendas\Vendas\obj\Debug\Vendas.csprojResolveAssemblyReference.cache
+C:\Documentos\Vendas\Vendas\obj\Debug\Vendas.Migrations.Inicial.resources
+C:\Documentos\Vendas\Vendas\obj\Debug\Vendas.csproj.GenerateResource.Cache

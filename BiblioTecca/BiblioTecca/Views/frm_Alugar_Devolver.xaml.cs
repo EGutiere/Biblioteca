@@ -21,9 +21,9 @@ namespace BiblioTecca.Views
     /// </summary>
     public partial class frm_Alugar_Devolver : Window
     {
-        private Livro livro = new Livro();
+        private Livro l = new Livro();
         private Locacao locacao = new Locacao();
-        private Pessoa pessoa = new Pessoa();
+        private Pessoa p = new Pessoa();
         
         public frm_Alugar_Devolver()
         {
@@ -31,123 +31,151 @@ namespace BiblioTecca.Views
 
         }
 
-        private void btn_fmr_Livros_Alugar_Devolver_Gravar_Click(object sender, RoutedEventArgs e)
+        private void txt_IdLocacao_Buscar_TextChanged(object sender, TextChangedEventArgs e)
         {
-            locacao.LocacaoDataAluguel = DateTime.Today;
-            locacao.LocacaoDataLimite = DateTime.Today.AddDays(10);
-
-            livro.IdLivro = Convert.ToInt16(txt_CodLivro_Locacao.Text);          
-            
-        }
-
-        private void btn_frmEmprestimo_Buscar_Click(object sender, RoutedEventArgs e)
-        {
-            locacao = new Locacao();
-
-            locacao.IdLocacao = Convert.ToInt16(txt_IdLocacao_Buscar.Text);            
-
-            locacao = LocacaoDAO.VerificarLocacaoPorIdLocacao(locacao);
-
-            if (!string.IsNullOrEmpty(txt_IdLocacao_Buscar.Text))
-            {
-               
-                if (locacao != null)
+            if (!String.IsNullOrEmpty(txt_IdLivro_Buscar.Text))
+            {                
+                try
                 {
-                    txt_NomeLivro_Locacao.Text = locacao.LocacaoLivro.LivroNome;
-                    txt_CodLivro_Locacao.Text = Convert.ToString(locacao.LocacaoLivro.IdLivro);
+                    l = new Livro();
+                    l.IdLivro = Convert.ToInt32(txt_IdLivro_Buscar.Text);
+                    l = LivroDAO.VerificarLivroPorCod(l);
+                    txt_NomeLivro_Locacao.Text = l.LivroNome;
+                    txt_ColetaneaLivro_Locacao.Text = l.LivroColetanea;
+                    txt_LivroClassificacao_Locacao.Text = l.LivroClassificacao;
 
-                    txt_NomePessoa_Locacao.Text = locacao.LocacaoPessoa.PessoaNome;
-                    txt_CpfPessoa_Locacao.Text = locacao.LocacaoPessoa.PessoaCpf;
-
-                    txt_Data_Limite_Devolucao.Text = Convert.ToString(locacao.LocacaoDataAluguel);
-
-                    if (locacao.LocacaoStatus == true)
+                    if (l.LivroStatus)
                     {
-                        txt_Situacao.Text = "Alugado";
+                        txt_Situacao.Text = "Disponível";
                     }
                     else
                     {
-                        txt_Situacao.Text = "Devolvido";
+                        txt_Situacao.Text = "Indisponível";
                     }
                 }
-                else
+                catch (Exception)
                 {
-                    MessageBox.Show("Locação não encontrado!", "Locação de Livros",
-                    MessageBoxButton.OK, MessageBoxImage.Information);
+                    txt_NomeLivro_Locacao.Text = "";
+                    txt_ColetaneaLivro_Locacao.Text = "";
+                    txt_LivroClassificacao_Locacao.Text = "";
+                    txt_Situacao.Text = "Indisponível";
                 }
             }
-            else
-            {
-                MessageBox.Show("Favor preencher o campo da busca", "Locação de Livros",
-                MessageBoxButton.OK, MessageBoxImage.Information);
-            }
-        }            
+        }
 
-        private void btn_frmPessoa_Alterar_Click(object sender, RoutedEventArgs e)
+        private void txt_CpfPessoa_Locacao_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (MessageBox.Show("Devolução Feita?", "Alterar Locação", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            if (!String.IsNullOrEmpty(txt_CpfPessoa_Locacao.Text))
             {
-                locacao = new Locacao();
-                livro = new Livro();
-                pessoa = new Pessoa();
-                locacao.LocacaoDataAluguel = DateTime.Today;
-                locacao.LocacaoDataLimite = DateTime.Today.AddDays(10);
-
-
-                livro.IdLivro = Convert.ToInt16(txt_CodLivro_Locacao.Text);
+                p = new Pessoa();
+                p.PessoaCpf = txt_CpfPessoa_Locacao.Text;
+                p = PessoaDAO.VerificarPessoaPorCPF(p);
 
                 try
                 {
-                    locacao.LocacaoLivro = LivroDAO.VerificarLivroPorCod(livro);
+                    txt_NomePessoa_Locacao.Text = p.PessoaNome;
+                    txt_CpfPessoa_Locacao.Text = p.PessoaCpf;
                 }
-                catch
-                {
-                    MessageBox.Show("Livro Não Encontrado", "Livro",
-                    MessageBoxButton.OK, MessageBoxImage.Error);
+                catch (Exception)
+                {                    
+                    txt_NomePessoa_Locacao.Text = "";                 
                 }
-
-
-                pessoa.PessoaCpf = txt_CpfPessoa_Locacao.Text;
-
-                try
-                {
-                    locacao.LocacaoPessoa = PessoaDAO.VerificarPessoaPorCPF(pessoa);
-                }
-                catch
-                {
-                    MessageBox.Show("asjdlkajsd", "Livro",
-                    MessageBoxButton.OK, MessageBoxImage.Error);
-                }
-
-                if (txt_Situacao.Text == "Alugado")
-                {
-                    locacao.LocacaoStatus = true;
-                }
-                else
-                {
-                    locacao.LocacaoStatus = false;
-                }
-
-                if (LocacaoDAO.AlterarLocacao(locacao))
-                {
-                    MessageBox.Show("Gravado com sucesso!", "Locação",
-                    MessageBoxButton.OK, MessageBoxImage.Information);
-                }
-                else
-                {
-                    MessageBox.Show("Não foi possível gravar!", "Locação",
-                    MessageBoxButton.OK, MessageBoxImage.Error);
-                }
-                
-                
             }
-            
         }
 
-        private void ComboBoxItem_Selected(object sender, RoutedEventArgs e)
-        {
 
-        }
+
+
+        //private void btn_frmEmprestimo_Buscar_Click(object sender, RoutedEventArgs e)
+        //{
+        //    l = new Livro();
+        //    if (!string.IsNullOrEmpty(txt_IdLocacao_Buscar.Text))
+        //    {
+        //        l.IdLivro = Convert.ToInt32(txt_IdLocacao_Buscar.Text);
+        //        l = LivroDAO.VerificarLivroPorCod(l);
+        //        if (l != null)
+        //        {
+        //            txt_NomeLivro_Locacao.Text = l.LivroNome;
+
+        //        }
+        //        else
+        //        {
+        //            MessageBox.Show("Livro não encontrado!", "Cadastro de Livro",
+        //            MessageBoxButton.OK, MessageBoxImage.Information);
+        //        }
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Favor preencher o campo da busca", "Cadastro de Livro",
+        //        MessageBoxButton.OK, MessageBoxImage.Information);
+        //    }
+        //}            
+
+        //private void btn_frmPessoa_Alterar_Click(object sender, RoutedEventArgs e)
+        //{
+        //    if (MessageBox.Show("Devolução Feita?", "Alterar Locação", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+        //    {
+        //        locacao = new Locacao();
+        //        livro = new Livro();
+        //        pessoa = new Pessoa();
+        //        locacao.LocacaoDataAluguel = DateTime.Today;
+        //        locacao.LocacaoDataLimite = DateTime.Today.AddDays(10);
+
+
+        //        livro.IdLivro = Convert.ToInt16(txt_CodLivro_Locacao.Text);
+
+        //        try
+        //        {
+        //            locacao.LocacaoLivro = LivroDAO.VerificarLivroPorCod(livro);
+        //        }
+        //        catch
+        //        {
+        //            MessageBox.Show("Livro Não Encontrado", "Livro",
+        //            MessageBoxButton.OK, MessageBoxImage.Error);
+        //        }
+
+
+        //        pessoa.PessoaCpf = txt_CpfPessoa_Locacao.Text;
+
+        //        try
+        //        {
+        //            locacao.LocacaoPessoa = PessoaDAO.VerificarPessoaPorCPF(pessoa);
+        //        }
+        //        catch
+        //        {
+        //            MessageBox.Show("asjdlkajsd", "Livro",
+        //            MessageBoxButton.OK, MessageBoxImage.Error);
+        //        }
+
+        //        if (txt_Situacao.Text == "Alugado")
+        //        {
+        //            locacao.LocacaoStatus = true;
+        //        }
+        //        else
+        //        {
+        //            locacao.LocacaoStatus = false;
+        //        }
+
+        //        if (LocacaoDAO.AlterarLocacao(locacao))
+        //        {
+        //            MessageBox.Show("Gravado com sucesso!", "Locação",
+        //            MessageBoxButton.OK, MessageBoxImage.Information);
+        //        }
+        //        else
+        //        {
+        //            MessageBox.Show("Não foi possível gravar!", "Locação",
+        //            MessageBoxButton.OK, MessageBoxImage.Error);
+        //        }
+
+
+        //    }
+
+        //}
+
+        //private void ComboBoxItem_Selected(object sender, RoutedEventArgs e)
+        //{
+
+        //}
 
     }
 }

@@ -25,9 +25,7 @@
                 <MenuItem x:Name="Menu_Alugar_Devolver" Header="Alugar / Devolver" FontSize="16" Margin="0,0,-3,0" Click="Menu_Alugar_Devolver_Click"/>
             </MenuItem>
             <MenuItem x:Name="Menu_Relatorio" Header="Relatorios" FontFamily="Courier New" FontSize="16">
-                <MenuItem x:Name="Menu_Relatorio_Locacoes" Header="Alugados" HorizontalAlignment="Left" Width="167"/>
-                <MenuItem x:Name="Menu_Relatorio_Devolucoes" Header="Devolvidos" HorizontalAlignment="Left" Width="191" Margin="0,0,-24,0"/>
-                <MenuItem x:Name="Menu_Relatorio_Devolucoes_Atrasadas" Header="Atrasados" HorizontalAlignment="Left" Width="167"/>
+                <MenuItem x:Name="Menu_Relatorios_Gerais" Header="Relatórios Gerais" HorizontalAlignment="Left" Width="162" Click="Menu_Relatorios_Gerais_Click"/>
             </MenuItem>
         </Menu>
 

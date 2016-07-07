@@ -2,6 +2,7 @@
 using System.Linq;
 using BiblioTecca.Model;
 using System.Collections.Generic;
+using System.Data.Entity;
 
 namespace BiblioTecca.DAL
 {
@@ -39,9 +40,7 @@ namespace BiblioTecca.DAL
 
         public static Locacao BuscarLocacaoPorId(Locacao l)
         {
-            return ctx.Locacoes.;
+            return ctx.Locacoes.Include(livro => livro.LocacaoLivro).Include(p => p.LocacaoPessoa).FirstOrDefault(x => x.IdLocacao.Equals(l.IdLocacao));
         }
-       
- 
     }
 }

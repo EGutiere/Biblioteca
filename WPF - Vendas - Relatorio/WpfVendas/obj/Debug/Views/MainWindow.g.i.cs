@@ -168,6 +168,12 @@ namespace WpfVendas.Views {
             return;
             case 7:
             this.menuRelatorio = ((System.Windows.Controls.MenuItem)(target));
+            
+            #line 14 "..\..\..\Views\MainWindow.xaml"
+            this.menuRelatorio.Click += new System.Windows.RoutedEventHandler(this.menuRelatorio_Click);
+            
+            #line default
+            #line hidden
             return;
             case 8:
             this.cboTeste = ((System.Windows.Controls.ComboBox)(target));

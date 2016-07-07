@@ -29,5 +29,11 @@ namespace BiblioTecca.Views
             frm_Alugar_Devolver a = new frm_Alugar_Devolver();
             a.ShowDialog();
         }
+
+        private void Menu_Relatorios_Gerais_Click(object sender, RoutedEventArgs e)
+        {
+            frmRelatorios r = new frmRelatorios();
+            r.ShowDialog();
+        }
     }
 }

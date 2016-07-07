@@ -73,11 +73,11 @@ namespace BiblioTecca.Views
 
                 if (PessoaDAO.AlterarPessoa(p))
                 {
-                    MessageBox.Show("Cliente alterado com sucesso", "Cadastra Pessoa", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Pessoa alterada com sucesso", "Cadastra Pessoa", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Cliente não alterado!", "Cadastra Pessoa", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Pessoa não alterada!", "Cadastra Pessoa", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
                 DesabilitarBotoes();
             }
@@ -95,11 +95,11 @@ namespace BiblioTecca.Views
             {
                 if (PessoaDAO.RemoverPessoa(p))
                 {
-                    MessageBox.Show("Cliente removido com sucesso", "Cadastra Pessoa", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Pessoa removido com sucesso", "Cadastra Pessoa", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Cliente não removido!", "Cadastra Pessoa", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Pessoa não removido!", "Cadastra Pessoa", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
                 DesabilitarBotoes();
             }

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsBanco" targetNamespace="http://tempuri.org/dsBanco.xsd" xmlns:mstns="http://tempuri.org/dsBanco.xsd" xmlns="http://tempuri.org/dsBanco.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BiblioTecca_DAL_ContextConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BiblioTecca_DAL_ContextConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BiblioTecca.Properties.Settings.GlobalReference.Default.BiblioTecca_DAL_ContextConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Relatorio_GeralTableAdapter" GeneratorDataComponentClassName="Relatorio_GeralTableAdapter" Name="Relatorio_Geral" UserDataComponentName="Relatorio_GeralTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BiblioTecca_DAL_ContextConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Livros.LivroNome AS [Titulo Livro], Pessoas.PessoaNome AS [Nome Pessoa], Locacao.IdLocacao AS [ID Locação], Locacao.LocacaoDataAluguel AS [Data Locação], 
+                         Locacao.LocacaoDataLimite AS [Data Limite Devolução], Locacao.LocacaoDataDevolucao AS [Data Devolução]
+FROM            Livros INNER JOIN
+                         Locacao ON Livros.IdLivro = Locacao.LocacaoLivro_IdLivro INNER JOIN
+                         Pessoas ON Locacao.LocacaoPessoa_IdPessoa = Pessoas.IdPessoa</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Titulo Livro" DataSetColumn="Titulo Livro" />
+              <Mapping SourceColumn="Nome Pessoa" DataSetColumn="Nome Pessoa" />
+              <Mapping SourceColumn="ID Locação" DataSetColumn="ID Locação" />
+              <Mapping SourceColumn="Data Locação" DataSetColumn="Data Locação" />
+              <Mapping SourceColumn="Data Limite Devolução" DataSetColumn="Data Limite Devolução" />
+              <Mapping SourceColumn="Data Devolução" DataSetColumn="Data Devolução" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsBanco" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsBanco" msprop:Generator_UserDSName="dsBanco">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Relatorio_Geral" msprop:Generator_TableClassName="Relatorio_GeralDataTable" msprop:Generator_TableVarName="tableRelatorio_Geral" msprop:Generator_TablePropName="Relatorio_Geral" msprop:Generator_RowDeletingName="Relatorio_GeralRowDeleting" msprop:Generator_RowChangingName="Relatorio_GeralRowChanging" msprop:Generator_RowEvHandlerName="Relatorio_GeralRowChangeEventHandler" msprop:Generator_RowDeletedName="Relatorio_GeralRowDeleted" msprop:Generator_UserTableName="Relatorio_Geral" msprop:Generator_RowChangedName="Relatorio_GeralRowChanged" msprop:Generator_RowEvArgName="Relatorio_GeralRowChangeEvent" msprop:Generator_RowClassName="Relatorio_GeralRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Titulo_x0020_Livro" msprop:Generator_ColumnVarNameInTable="columnTitulo_Livro" msprop:Generator_ColumnPropNameInRow="Titulo_Livro" msprop:Generator_ColumnPropNameInTable="Titulo_LivroColumn" msprop:Generator_UserColumnName="Titulo Livro" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nome_x0020_Pessoa" msprop:Generator_ColumnVarNameInTable="columnNome_Pessoa" msprop:Generator_ColumnPropNameInRow="Nome_Pessoa" msprop:Generator_ColumnPropNameInTable="Nome_PessoaColumn" msprop:Generator_UserColumnName="Nome Pessoa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_x0020_Locação" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_Locação" msprop:Generator_ColumnPropNameInRow="ID_Locação" msprop:Generator_ColumnPropNameInTable="ID_LocaçãoColumn" msprop:Generator_UserColumnName="ID Locação" type="xs:int" />
+              <xs:element name="Data_x0020_Locação" msprop:Generator_ColumnVarNameInTable="columnData_Locação" msprop:Generator_ColumnPropNameInRow="Data_Locação" msprop:Generator_ColumnPropNameInTable="Data_LocaçãoColumn" msprop:Generator_UserColumnName="Data Locação" type="xs:dateTime" />
+              <xs:element name="Data_x0020_Limite_x0020_Devolução" msprop:Generator_ColumnVarNameInTable="columnData_Limite_Devolução" msprop:Generator_ColumnPropNameInRow="Data_Limite_Devolução" msprop:Generator_ColumnPropNameInTable="Data_Limite_DevoluçãoColumn" msprop:Generator_UserColumnName="Data Limite Devolução" type="xs:dateTime" />
+              <xs:element name="Data_x0020_Devolução" msprop:Generator_ColumnVarNameInTable="columnData_Devolução" msprop:Generator_ColumnPropNameInRow="Data_Devolução" msprop:Generator_ColumnPropNameInTable="Data_DevoluçãoColumn" msprop:Generator_UserColumnName="Data Devolução" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Relatorio_Geral" />
+      <xs:field xpath="mstns:ID_x0020_Locação" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

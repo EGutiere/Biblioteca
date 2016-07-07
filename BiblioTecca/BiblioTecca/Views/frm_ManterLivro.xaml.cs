@@ -77,11 +77,11 @@ namespace BiblioTecca.Views
 
                 if (LivroDAO.AlterarLivro(l))
                 {
-                    MessageBox.Show("Cliente alterado com sucesso", "Cadastra Livro", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Livro alterado com sucesso", "Cadastra Livro", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Cliente não alterado!", "Cadastra Livro", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Livro não alterado!", "Cadastra Livro", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
                 DesabilitarBotoes();
             }
@@ -99,11 +99,11 @@ namespace BiblioTecca.Views
             {
                 if (LivroDAO.RemoverLivro(l))
                 {
-                    MessageBox.Show("Cliente removido com sucesso", "Cadastra Livro", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Livro removido com sucesso", "Cadastro Livro", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Cliente não removido!", "Cadastra Livro", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("Livro não removido!", "Cadastro Livro", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
                 DesabilitarBotoes();
             }

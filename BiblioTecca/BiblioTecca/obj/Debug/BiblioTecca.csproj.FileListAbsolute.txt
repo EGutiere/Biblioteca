@@ -151,3 +151,5 @@ E:\Projetos_C#\BiblioTecca\BiblioTecca\obj\Debug\BiblioTecca.Migrations.Bibliote
 E:\Projetos_C#\BiblioTecca\BiblioTecca\obj\Debug\BiblioTecca.Migrations.bb8.resources
 E:\Projetos_C#\BiblioTecca\BiblioTecca\obj\Debug\BiblioTecca.Properties.Resources.resources
 E:\Projetos_C#\BiblioTecca\BiblioTecca\obj\Debug\BiblioTecca.csproj.GenerateResource.Cache
+E:\Projetos_C#\BiblioTecca\BiblioTecca\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Projetos_C#\BiblioTecca\BiblioTecca\obj\Debug\BiblioTecca.Views.frmRelatorios.resources
